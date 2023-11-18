@@ -34,5 +34,5 @@ Saya menyarankan anda saat mengikuti langkah - langkah ini terlebih dahulu. Teri
     php artisan db:seed
     php artisan serve
     
-Username = Mamiez Figoez
+Username = Mamiez Figoez || 
 Password = qwerty54321
