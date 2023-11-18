@@ -4,49 +4,53 @@
       <div class="relative flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white pt-0">
          <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
             <div class="flex-1 px-3 bg-white divide-y space-y-1">
-
+<style type="text/css">
+   .active {
+      color: green;
+   }
+</style>
                <ul class="space-y-2 pb-2">
                   @can('admin')
                   <li>
-                     <a href="/dashboard" class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group">
+                     <a href="/dashboard" class="{{ (Request::is('dashboard'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group">
                         <i class="fa-solid fa-gauge"></i>
                         <span class="ml-3">Dashboard</span>
                      </a>
                   </li>
                   <li >
-                    <a href="/data-absensi" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                    <a href="/data-absensi" class="{{ (Request::is('data-absensi'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                      <i class="fa-solid fa-clock"></i>
                      <span class="ml-3 flex-1 whitespace-nowrap">Data Absensi</span>
                   </a>
                </li>
                <li>
-                  <a href="/data-karyawan" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                  <a href="/data-karyawan" class="{{ (Request::is('data-karyawan'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                      <i class="fa-solid fa-users"></i>
                      <span class="ml-3 flex-1 whitespace-nowrap">Data Karyawan</span>
                   </a>
                </li>
                <li>
-                  <a href="/data-shift" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                  <a href="/data-shift" class="{{ (Request::is('data-shift'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                      <i class="fa-solid fa-user-clock"></i>
                      <span class="ml-3 flex-1 whitespace-nowrap">Data Shift</span>
                   </a>
                </li>
                <li>
-                  <a href="/data-laporan" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                  <a href="/data-laporan" class="{{ (Request::is('data-laporan'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                      <i class="fa-solid fa-calendar-days"></i>
                      <span class="ml-3 flex-1 whitespace-nowrap">Data Laporan</span>
                   </a>
                </li>
                <li>
                   <li>
-                     <a href="/data-laporan/create" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                     <a href="/data-laporan/create" class="{{ (Request::is('data-laporan/create'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                         <i class="fa-solid fa-file-pen"></i>
                         <span class="ml-3 flex-1 whitespace-nowrap">Buat Laporan</span>
                      </a>
                   </li>
                   <li>
                      <li>
-                        <a href="/data-bulanan" class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                        <a href="/data-bulanan" class="{{ (Request::is('data-bulanan'))? 'active':'' }} text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                            <i class="fa-solid fa-calendar-check"></i>
                            <span class="ml-3 flex-1 whitespace-nowrap">Buat Laporan Bulanan</span>
                         </a>

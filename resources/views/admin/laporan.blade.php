@@ -6,10 +6,10 @@
 	<link rel='stylesheet' href='css/bootstrap.min.css'>
 </head>
 <body onload='window.print()' style='font-family: Quicksand, sans-serif'>
-	<img src='img/logoInet.png' style='height: 90px; width: 105px; margin-top: 10px; margin-left: 10px; margin-bottom: -50px;'>
+	<img src='https://i.ytimg.com/vi/gbD6FGh8IwE/maxresdefault.jpg' style='height: 90px; width: 105px; margin-top: 10px; margin-left: 10px; margin-bottom: -50px;'>
 	<img src='' style='display: none; margin-left: auto; width: 90px; margin-bottom: -70px; margin-top: -38px; margin-right: 5px;'>
-	<h3 class='text-center' style='font-family: Quicksand, sans-serif; margin-top: -30px;'>.:: PT. INET MEDIA ::.</h3>
-	<p style='font-size: 12px;' class='text-center'>Jl. Raya Hankam No.99b, RT.004/RW.008, Kec. Jatisampurna,Kota Bks, Jawa Barat 17432 <br> Email : inetmedia@gmail.com | Telp : 085810154283 </p>
+	<h3 class='text-center' style='font-family: Quicksand, sans-serif; margin-top: -30px;'>.:: PT. Mamiez Figoez ::.</h3>
+	<p style='font-size: 12px;' class='text-center'>Jl. Mars, RT.101/RW.008, Kec. Bulan,Kota Jupiter, Planet Uranus 00001 <br> github : MamiezFigoez | Telp : 081******** </p>
 	<hr>
 	<p style='font-size: 12px;' class='text-end'>Tanggal : {{ request()->get('tanggal') }} </p>
 	<h4 class='text-center' style='font-family: Quicksand'>Laporan {{ $jenis }}</h4>

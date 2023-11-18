@@ -23,7 +23,7 @@ use App\Models\laporan;
 |
 */
 
-
+Route::get("/", function () { return redirect("/login"); });
 Route::get('/login', [loginController::class, 'show'])->middleware('guest')->name('login');
 Route::post('/login', [loginController::class, 'authenticate'])->middleware('guest');
 Route::get('/scan-qr', function () {

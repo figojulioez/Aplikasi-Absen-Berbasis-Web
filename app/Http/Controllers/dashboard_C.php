@@ -14,6 +14,7 @@ class dashboard_C extends Controller
         $karyawanKurangBaik = '';
 
         $data = false;
+
         if ( laporan::count() > 0 ) {
 
         $karyawanTerbaik = laporan::select('time')->max('time');

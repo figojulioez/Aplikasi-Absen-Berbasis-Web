@@ -12,8 +12,9 @@
                   </svg>
                </button>
                <a href="#" class="text-xl font-bold flex items-center lg:ml-2.5">
-               <img src="{{ asset('img/logoInet.png') }}" class="h-6 mr-2" alt="Windster Logo">
-               <span class="self-center whitespace-nowrap">INETMEDIA</span>
+                  <!-- Jika anda ingin mengganti logo navbar -->
+               <img src="https://i.ytimg.com/vi/gbD6FGh8IwE/maxresdefault.jpg" class="h-6 mr-2" alt="Windster Logo">
+               <span class="self-center whitespace-nowrap">MamiezFigoez</span>
                </a>
             </div>
             <div class="flex items-center">

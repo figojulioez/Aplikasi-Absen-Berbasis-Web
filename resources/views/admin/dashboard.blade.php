@@ -7,7 +7,7 @@
 
 @if( $data == true )		
 		<div class="card w-[300px] mx-auto bg-red-300  shadow-xl hover:shadow">
-			<img class="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="https://avatars.githubusercontent.com/u/67946056?v=4" alt="">
+			<img class="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="{{ asset('storage/' . $karyawanTerbaik->karyawan->gambar) }}" alt="">
 			<div class="text-center mt-2 text-3xl font-medium">{{ $karyawanTerbaik->karyawan->nama }}</div>
 			<div class="text-center mt-2 font-light text-sm">{{ $karyawanTerbaik->karyawan->dpt }}</div>
 			<div class="text-center font-normal text-lg">Karyawan dengan jam kerja terbanyak</div>
@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="card w-[300px] mx-auto bg-red-300  shadow-xl hover:shadow">
-			<img class="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="https://avatars.githubusercontent.com/u/67946056?v=4" alt="">
+			<img class="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="{{ asset('storage/' . $karyawanKurangBaik->karyawan->gambar) }}" alt="">
 			<div class="text-center mt-2 text-3xl font-medium">{{ $karyawanKurangBaik->karyawan->nama }}</div>
 			<div class="text-center mt-2 font-light text-sm">{{ $karyawanKurangBaik->karyawan->dpt }}</div>
 			<div class="text-center font-normal text-lg">Karyawan dengan jam kerja<br> terdikit</div>

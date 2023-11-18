@@ -16,11 +16,7 @@ class admin
     public function handle(Request $request, Closure $next): Response
     {
 
-
-        if ( !auth()->check() || auth()->user()->name !== 'INET MEDIA' ) {
-            abort('403');
-        }
-        if (! Gate::allows('admin') ) {
+        if (! Gate::allows("admin") ) {
             abort(403);
         }
 

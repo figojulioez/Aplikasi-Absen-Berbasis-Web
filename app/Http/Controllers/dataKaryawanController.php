@@ -53,6 +53,7 @@ class dataKaryawanController extends Controller
         ]);
         $validateData['img'] = $request->file('img')->store('img');
 
+
         karyawan::create([
             'nama' => $validateData['nama'],
             'qrCode' => Str::random(10),
@@ -158,6 +159,11 @@ class dataKaryawanController extends Controller
        karyawan::where('id', $id)->delete();
 
        shift::where('karyawan_id', $id)->delete();
+       
+       laporan::where('karyawan_id', $id)->delete();
+
+        preLaporan::where('karyawan_id', $id)->delete();
+
 
        dataAbsensi::where('karyawan_id', $id)->delete();
 

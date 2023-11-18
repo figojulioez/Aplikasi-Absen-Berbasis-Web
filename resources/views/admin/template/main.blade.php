@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	<link rel="icon" type="image/x-icon" href="{{ asset('img/logoInet.png') }}">
+	<link rel="icon" type="image/x-icon" href="https://i.ytimg.com/vi/gbD6FGh8IwE/maxresdefault.jpg">
 	<!-- <link rel="stylesheet" type="text/css" href="css/bgLoader.css"> -->
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<script src="https://demo.themesberg.com/windster/app.bundle.js"></script>
